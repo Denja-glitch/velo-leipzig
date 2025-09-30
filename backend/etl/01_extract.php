@@ -10,7 +10,7 @@ function fetchVeloData() {
 }
 
 function fetchWeatherData() {
-    $url = "https://api.open-meteo.com/v1/forecast?latitude=46.9481&longitude=7.4474&current=temperature_2m%2Crelative_humidity_2m%2Crain%2Cweather_code";
+    $url = "https://api.open-meteo.com/v1/forecast?latitude=51.33942332894444&longitude=12.68820581771105&current=temperature_2m%2Crelative_humidity_2m%2Crain%2Cweather_code";
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $response = curl_exec($ch);
