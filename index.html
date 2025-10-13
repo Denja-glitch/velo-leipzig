@@ -5,9 +5,28 @@
         <titel>Velölä Leipzig</titel>
         <link rel="stylesheet" href="styles.css">
         <link href="Font einfügen" rel="stylesheet"> /* Font noch einfügen */
+
+
     </head>
     <body>
+       <script type = "module" src="script.js"></script>
        <input type="date" name="datepicker" id="datepicker">
-        <script type = "module" src="script.js"></script>
+
+       <label for="standort">Station</label>
+
+        <select name="standort" id="standort_dropdown">
+         <option value="">Station wählen</option>
+         <option value="dog">Hautpbahnhof West</option>
+         <option value="cat">Permoserstrasse</option>
+         <option value="hamster">Stannebeinplatz</option>
+         <option value="parrot">Siemens AG</option>
+        </select>
+
+        <dialog>
+         <button autofocus>Close</button>
+         <p>Auslastung Station West Bahnhof</p>
+        </dialog>
+        <button>Suche</button>
+
     </body>
 </html>

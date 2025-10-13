@@ -14,7 +14,7 @@ try {
 
     $sql = "SELECT * FROM bike_leipzig WHERE DATE(timestamp) = :date AND place = :place";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([ 'date' => $date, 'place' => $standort ]);
+    $stmt->execute([ 'date' => $date, 'place' => $place ]);
 // -> Daten in Empfang nehmen
 $resulsts = $stmt->fetchAll();
 
