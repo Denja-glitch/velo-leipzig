@@ -1,4 +1,4 @@
-/* async function getAll() {
+async function getAll() {
     const url = 'https://nextbike-leipzig-im3.interaktive-medien-portfolio.ch/backend/api/getAll.php';
     try {
         const response = await fetch(url);
@@ -9,10 +9,10 @@
 }
 }
 
-getAll (); */
+getAll (); 
 
-async function getByDate(date){
-    const url = `https://nextbike-leipzig-im3.interaktive-medien-portfolio.ch/backend/api/getByDate.php?date=${date}`;
+async function getByDateAndPlace(date, place){
+    const url = `https://nextbike-leipzig-im3.interaktive-medien-portfolio.ch/backend/api/getByDate.php?date=${date}&place=${place}`;
 try {
     const response = await fetch(url);
     const data = await response.json();
@@ -21,14 +21,24 @@ try {
         console.error(error)
 }
 }
+
 const datepicker = document.querySelector('#datepicker');
-datepicker.addEventListener('change', function(){
-    const date = datepicker.value;
-    getByDate(date)
-    console.log(date);
+const placeselect = document.querySelector ('#standort_dropdown');
+const btn_search = document.querySelector ('#searchBtn');
+
+btn_search.addEventListener('click', function (){
+    loadData();
 })
 
-/* Button Suche zu*/
+function loadData(){
+    const date = datepicker.value;
+    const place = placeselect.value;
+    getByDateAndPlace(date, place);
+}
+
+
+
+/* Button Suche zu */
 
 const dialog = document.querySelector("dialog");
 const showButton = document.querySelector("dialog + button");
@@ -42,4 +52,4 @@ showButton.addEventListener("click", () => {
 // "Close" button closes the dialog
 closeButton.addEventListener("click", () => {
   dialog.close();
-});
+}); 

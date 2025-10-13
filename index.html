@@ -1,4 +1,4 @@
-<html lang = "de">
+<!--- <html lang = "de">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content=""width=device-width, initial-scale="1.0">
@@ -29,4 +29,49 @@
         <button>Suche</button>
 
     </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velölä Leipzig</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link href="FONT-EINFÜGEN" rel="stylesheet"> -->
+</head>
+<body>
+
+    <h1>Bike-Auslastung Leipzig</h1>
+
+    <!-- Datumsauswahl -->
+    <label for="datepicker">Datum</label>
+    <input type="date" id="datepicker" />
+
+    <!-- Stationsauswahl -->
+    <label for="standort_dropdown">Station</label>
+    <select id="standort_dropdown">
+        <option value="">Station wählen</option>
+        <!-- Werte hier sind die UIDs aus deinem Backend! -->
+        <option value="32097">Hauptbahnhof West</option>
+        <option value="1200717">Permoserstrasse</option>
+        <option value="7592517">Stannebeinplatz</option>
+        <option value="9559677">Siemens AG</option>
+    </select>
+
+    <!-- Button zum Suchen -->
+    <button id="searchBtn">Suche</button>
+
+    <!-- Dialog (Popup) -->
+    <dialog id="resultDialog">
+        <button id="closeDialog" autofocus>Close</button>
+        <div id="dialogContent">
+            <!-- Inhalte werden dynamisch per JS eingefügt -->
+        </div>
+    </dialog>
+
+    <!-- Dein JavaScript -->
+    <script type="module" src="script.js"></script>
+</body>
 </html>

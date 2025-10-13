@@ -10,7 +10,7 @@ try {
     $pdo = new PDO($dsn, $username, $password, $options);
 
     $date = $_GET['date'];
-    $standort = $_GET['place'];
+    $place = $_GET['place'];
 
     $sql = "SELECT * FROM bike_leipzig WHERE DATE(timestamp) = :date AND place = :place";
     $stmt = $pdo->prepare($sql);
