@@ -1,0 +1,37 @@
+/* Map Hover Stationen */
+#Siemens_AG_Popup,
+#Hauptbahnhof_West_Popup,
+#Permosertstrasse_Popup_Kopie,
+#Stannebeinplatz_Popup {
+    opacity: 0;
+}
+
+#Siemens_AG_Popup:hover,
+#Hauptbahnhof_West_Popup:hover,
+#Permosertstrasse_Popup_Kopie:hover,
+#Stannebeinplatz_Popup:hover {
+    opacity: 1;
+}
+
+#Siemens_AG,
+#Hauptbahnhof_West,
+#Permosertstrasse,
+#Stannebeinplatz {
+    cursor: pointer;
+}
+
+
+dialog {
+    width: 90%;
+    height: 70%;
+    max-width: unset;
+    max-height: unset;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+dialog::backdrop {
+    background-color: black;
+    opacity: 0.4;
+}
