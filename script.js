@@ -24,36 +24,17 @@ async function getByDateAndPlace(date, place) {
 
 const datepicker = document.querySelector('#datepicker');
 const placeselect = document.querySelector('#standort_dropdown');
-const btn_search = document.querySelector('#searchBtn');
+const btn_search = document.querySelector('#search-btn');
 
-btn_search.addEventListener('click', function () {
-    loadData();
-})
+btn_search.addEventListener('click', function () { loadData(); }) 
+function loadData() { const date = datepicker.value; const place = placeselect.value; getByDateAndPlace(date, place); } 
 
-function loadData() {
-    const date = datepicker.value;
-    const place = placeselect.value;
-    getByDateAndPlace(date, place);
-}
 
-/* Stationpin Klick */
-const pin_Hauptbahnhof_West = document.querySelector('#Hauptbahnhof_West');
-
-pin_Hauptbahnhof_West.addEventListener('click', function () {
-    console.log('Hauptbahnhof_West');
-    showDialogByPlace('Hauptbahnhof_West');
-})
-
-const dialog = document.querySelector('#dialog');
-const standort = document.querySelector('#standort');
-function showDialogByPlace(place) {
-    dialog.showModal();
-    standort.innerText = place;
-}
-
-const btn_close = document.querySelector('#close');
-btn_close.addEventListener('click', function () {
-    dialog.close();
-    standort.innerText = '';
+let marker_list = document.querySelectorAll(".marker");
+console.log(marker_list)
+marker_list.forEach(marker => {
+    marker.addEventListener("click", function(){
+        console.log(this.getAttribute("data-uid"))
+    })
+    ;    
 });
-
