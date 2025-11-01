@@ -30,7 +30,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-color: #f0f0f0;
+    background-color: #28526A;
 }
 
 .right {
@@ -41,7 +41,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    font-family: sans-serif;
+    font-family: 'REM', sans-serif
 }
 
 .right h1 {
@@ -59,39 +59,20 @@
     margin-top: 10px;
 }
 
-.right select,
-.right input[type="date"],
-.right button {
-    margin-bottom: 15px;
-    padding: 8px;
-    font-size: 1em;
-    width: 100%;
-    box-sizing: border-box;
-}
 
-.right button {
-    background-color: #28526A;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-
-/* Dialog-Grundlayout */
 .dialog {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #28526A; /* Dunkelblau */
-  color: #FFDD00; /* Gelb */
+  background-color: #0F2A39;
+  color: #FFDD00; 
   padding: 2rem;
-  border-radius: 16px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-  width: 480px;
+  width: 500px;
   max-width: 90%;
   z-index: 1000;
-  font-family: 'Arial', sans-serif;
+  font-family: 'REM', sans-serif;
 }
 
 .hidden {
@@ -110,7 +91,7 @@
   top: 10px;
   right: 15px;
   font-size: 1.5rem;
-  color: #FFDD00;
+  color: white;
   cursor: pointer;
   background: none;
   border: none;
@@ -119,15 +100,15 @@
 .info-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .info-box {
-    background: rgba(217, 217, 217, 0.2); /* 20% transparent */
+    background: rgba(217, 217, 217, 0.2);
     color: white;
     padding: 10px;
     border-radius: 8px;
     text-align: center;
-    width: 120px;
+    width: 150px;
 }
 

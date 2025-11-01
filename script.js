@@ -49,24 +49,18 @@ document.addEventListener("DOMContentLoaded", () => {
     async function loadChartData(date, place) {
         const data = await getByDateAndPlace(date, place);
 
-
-        // Filter für die drei Zeitpunkte
         const morning = data.find(entry => entry.timestamp.includes('06:30'));
         const noon = data.find(entry => entry.timestamp.includes('11:30'));
         const evening = data.find(entry => entry.timestamp.includes('18:30'));
 
-
-        // Wetterdaten einfügen
         tempValue.textContent = data[0]?.temp ?? '--';
         rainValue.textContent = data[0]?.rain ?? '--';
 
 
-        // Chart-Daten
-        const labels = ['Morgens', 'Mittag', 'Abend'];
+        const labels = ['Morgens', 'Mittags', 'Abends'];
         const booked = [morning?.booked ?? 0, noon?.booked ?? 0, evening?.booked ?? 0];
         const available = [morning?.available ?? 0, noon?.available ?? 0, evening?.available ?? 0];
 
-        // Diagramm aktualisieren
         if (chart) chart.destroy();
         const canvas = document.getElementById('chart');
         chart = new Chart(canvas, {
@@ -75,17 +69,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 labels: labels,
                 datasets: [
                     { label: 'Verfügbare Bikes', data: available, backgroundColor: '#FFD700' },
-                    { label: 'Gebuchte Bikes', data: booked, backgroundColor: '#1F2A44' }
+                    { label: 'Gebuchte Bikes', data: booked, backgroundColor: '#28526A' }
                 ]
             },
             options: {
                 responsive: true,
                 scales: {
-                    x: { stacked: true, ticks: { color: '#FFDD00' } },
-                    y: { stacked: true, beginAtZero: true, ticks: { color: '#FFDD00' } }
+                    x: { stacked: true, ticks: { color: '#FFDD00' }},
+                    y: { stacked: true, beginAtZero: true, min: 0, max:60, ticks: { color: '#FFDD00' } }
                 },
                 plugins: {
-                    legend: { labels: { color: '#FFDD00' } }
+                    legend: {labels: { color: '#FFDD00'} }
                 }
             }
         });
