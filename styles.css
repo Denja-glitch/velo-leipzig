@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+}
+
+
 /* Map Hover Stationen */
 #Siemens_AG_Popup,
 #Hauptbahnhof_West_Popup,
@@ -23,6 +28,7 @@
 .container {
     display: flex;
     height: 100vh;
+    width: 100vw;
 }
 
 .left {
@@ -30,12 +36,14 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-color: #28526A;
+    object-fit: fill;
+    background-color: red;
+
 }
 
 .right {
     flex: 1;
-    background-color: #FFDD00;
+    background-color: red;
     color: #28526A;
     padding: 40px;
     display: flex;
