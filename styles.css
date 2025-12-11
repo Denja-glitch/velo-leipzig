@@ -85,7 +85,7 @@ h2{
 .header {
     display: flex;
     flex-direction: row; /* Standard (größere Screens) */
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
