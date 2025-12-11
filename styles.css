@@ -42,6 +42,12 @@ h2{
 
 }
 
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
 .right p {
     font-size: 1em;
     margin-bottom: 1rem;
