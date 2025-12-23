@@ -63,6 +63,7 @@ h3 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
 
 /* ------------- map hover station ------------- */
@@ -114,7 +115,7 @@ h3 {
     flex: 2;
     background-color: var(--gelb);
     color: var(--blau);
-    padding: 3rem 5rem; 
+    padding: 6rem; 
     align-items: center;       
     text-align: left;        
 }
@@ -182,7 +183,7 @@ h3 {
     }
 
 /* ------------- breakpoint mobile ------------- */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .header {
         flex-direction: column;
         height: 75vh;
@@ -225,3 +226,30 @@ h3 {
       text-align: center;
     }
   }
+
+
+/* ------------- breakpoint ipad ------------- 
+
+  @media (max-width: 1024px) {
+.header {
+        flex-direction: column;
+        height: 75vh;
+    }
+    
+    .left,
+    .right {
+        flex: none; 
+        width: 100%;
+    }
+
+    .left{
+      height: 85vh;
+    }
+    
+    .right {
+        padding: 2rem; 
+    }
+  }
+*/
+
+
