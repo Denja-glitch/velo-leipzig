@@ -228,28 +228,14 @@ h3 {
   }
 
 
-/* ------------- breakpoint ipad ------------- 
 
-  @media (max-width: 1024px) {
-.header {
-        flex-direction: column;
-        height: 75vh;
-    }
-    
-    .left,
-    .right {
-        flex: none; 
-        width: 100%;
-    }
+  
 
-    .left{
-      height: 85vh;
-    }
-    
-    .right {
-        padding: 2rem; 
-    }
+/* ------------- breakpoint 1024px ------------- */
+@media (max-width: 1024px) {
+  .right {
+    padding: 2rem;
   }
-*/
+}
 
 
