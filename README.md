@@ -19,7 +19,7 @@ Erst als alles technische geklappt hat, haben wir uns dem styling gewidmet. Dies
 
 RESSOURCEN & PROMTS
 
-Ressourcen: • API: Nextbike und  • HTML, CSS, PHP, SQL und JavaScript • Lea & Wolfang
+Ressourcen: • API: Nextbike und Open Meteo  • HTML, CSS, PHP, SQL und JavaScript • Lea & Wolfang
 
 Prompts
 KI (Perplexitii): • «Wie mache ich, dass eine SVG-Map auf verschiedenen Devices gut aussieht?   • «Prüfe mir den Code auf Verdoppelungen»  • «Was muss ich beim Java Script hinzufügen, damit es die Live Daten der API nimmt und anzeigt?»
