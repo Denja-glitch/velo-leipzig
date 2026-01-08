@@ -9,7 +9,7 @@ LEARNINGS & SCHWIERIGKEITEN
 
 Wir haben gelernt, die API ganz gut zu prüfen. Denn wir hatten uns für eine API entschieden, die keine Daten zurückspielt. So mussten wir den Umweg gehen und die Datenbank mit Zufallswerten ergänzen. Dies haben wir so mit Lea und Wolfgang abgesprochen. Eine Schwierigkeit war das verspielte Layout. Dies hat viel Zeit gekostet zu stylen und responsive zu gestalten. 
 Wir haben den Prototyp nicht 1:1 umgesetzt, da wir beim programmieren merkten, dass der User-Flow nicht natürlich war. Dies haben wir beim programmieren angepasst. So klickt man jetzt direkt auf den Pinpoint und wählt dort das Datum aus anstelle beim gelben Balken. 
-Die SVG-Map war eine rieisge Herausforderung besonders bei dem Responsiv machen. Im Netz fand man unter dem Begriff Responsiv ausschliesslich wie die Map klickbar wird und nicht wie man diese auf verschiedenen Devices schön darstellen kann. Uns fehlte hier definitv die Unterstützung der Dozierenden.*
+Die SVG-Map war eine rieisge Herausforderung besonders bei dem Responsiv machen. Im Netz fand man unter dem Begriff Responsiv ausschliesslich wie die Map klickbar wird und nicht wie man diese auf verschiedenen Devices schön darstellen kann.*
 
 
 HERANGEHENSWEISE
